@@ -27,6 +27,11 @@ int get_vec_element(vec_ptr v, long int index, int *dest)
 	return 1;
 }
 
+int * get_vec_start(vec_ptr v)
+{
+	return v->data;
+}
+
 long int vec_length(vec_ptr v)
 {
 	return v->len;
